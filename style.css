@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  padding: 30px 10%;
+  padding: 30px 11%;
   padding-bottom: 80px 0;
   justify-content: center;
 }
@@ -43,12 +43,12 @@ body {
 
 /*-------------About me section starts from here----------*/
 section {
-  padding-top: 100px 0;
+  padding-top: 100px 15%;
   padding-bottom: 80px 0;
   margin: 0;
   color: #ababab;
 }
-.row {
+.row-1 {
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
@@ -65,10 +65,10 @@ section {
 }
 
 .about-col-2 {
-  flex-basis: 65%;
+  flex-basis: 68%;
 }
 
-.heading {
+.heading-1 {
   font-size: 40px;
   font: weight 500px;
   font-family: 'Poppins', 'san-serif';
@@ -83,18 +83,241 @@ section {
   align-content: left;
 }
 
-.skills {
+.heading-2 {
   padding-top: 20px;
   font-size: 30px;
-  font-weight: 400px;
+  font-weight: medium;
   font-family: 'Poppins', 'san-serif';
   color: #fff;
 }
 
-.skill-text {
+.heading-3 {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Poppins', 'san-serif';
+  color: #fff;
+}
+
+.p-text {
   padding-top: 10px;
   font-weight: lighter;
   font-size: 20px;
   font-family: 'Poppins', 'san-serif';
   color: #fff;
+}
+
+/*.background-color-1 {
+  background: #262626;
+}*/
+
+/*-------------Resume section starts from here----------
+.row-2 {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.resume-col-1 {
+  flex-basis: 50%;
+}
+
+.resume-col-2 {
+  flex-basis: 45%;}*/
+
+#resume-info {
+  padding: 30px 0;
+}
+
+.row-2 {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.resume-col-1 {
+  background: #262626;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: light;
+}
+.resume-col-1:hover {
+  background: #ff004f;
+}
+
+.resume-col-2 {
+  background: #262626;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: light;
+}
+.resume-col-2:hover {
+  background: #ff004f;
+}
+.resume-col-3 {
+  background: #262626;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: light;
+}
+.resume-col-3:hover {
+  background: #ff004f;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*-------------Project section starts from here----------
+.row-3 {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project-col-1 {
+  flex-basis: 50%;
+}
+.project-col-2 {
+  flex-basis: 45%;
+}*/
+
+#project-info {
+  padding: 30px 0;
+}
+
+.row-3 {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.project-col-1 {
+  background: #262626;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: light;
+  transition: transition 0.5s;
+}
+.project-col-1:hover {
+  background: #ff004f;
+  transform: translateZ(-10px);
+}
+
+.project-col-2 {
+  background: #262626;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: light;
+}
+.project-col-2:hover {
+  background: #ff004f;
+}
+.project-col-3 {
+  background: #262626;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: light;
+}
+.project-col-3:hover {
+  background: #ff004f;
+}
+
+/*-------------Contact section starts from here----------
+.row-4 {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-col-1 {
+  flex-basis: 55%;
+}
+.contact-col-2 {
+  flex-basis: 35%;
+}*/
+.row-4 {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-col-1 {
+  flex-basis: 60%;
+}
+.contact-col-2 {
+  flex-basis: 35%;
+}
+
+.about-col-2 p {
+  margin: 30px;
+}
+
+.media-icons {
+  margin-top: 30px;
+}
+.media-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+}
+
+.form {
+  width: 100%;
+  margin: 40px auto;
+  border: 1px solid var(--gray4);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.form-element {
+  margin-bottom: 2rem;
+}
+
+.label-text {
+  font-weight: 600;
+}
+
+.input-element {
+  width: 70%;
+  display: block;
+  float: right;
+  height: 24px;
+  border: 0;
+  outline: none;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 20px;
+  border-radius: 5px;
+  background: #262626;
+}
+
+.btn {
+  width: 49%;
+  padding: 0.5rem;
+  border: 1px solid var(--green);
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--black);
+  background-color: var(--orange);
+  color: var(--black);
 }
