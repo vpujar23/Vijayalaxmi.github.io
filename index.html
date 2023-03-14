@@ -12,20 +12,31 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <div class="container">
-      <!--Navbar section starts from here--->
-      <nav class="navigation">
-        <ul>
-          <li class="list"><a class="items" href="#">Home</a></li>
-          <li class="list"><a class="items" href="#">About</a></li>
-          <li class="list"><a class="items" href="#">Resume</a></li>
-          <li class="list"><a class="items" href="#">Projects</a></li>
-          <li class="list"><a class="items" href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <!--About me section starts from here--->
+      <!--Navbar  starts from here--->
+      <div id="home">
+        <nav class="navigation">
+          <ul id="menu">
+            <li class="list"><a class="items" href="#about">About</a></li>
+            <li class="list">
+              <a class="items" href="#resume-info">Resume</a>
+            </li>
+            <li class="list">
+              <a class="items" href="#project-info">Projects</a>
+            </li>
+            <li class="list">
+              <a class="items" href="#contact-info">Contact</a>
+            </li>
+            <li class="list">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+      </div>
+
+      <!--About me  starts from here--->
       <section id="aboutme" class="background-color-1">
         <div id="about">
           <div class="container">
@@ -35,27 +46,26 @@
                   class="image"
                   src="/images/MyPic.jpg"
                   alt="headshot of Vijayalaxmi "
-                  width="400 px"
-                  height="400 px"
+                  width="300"
+                  height="400"
                 />
               </div>
               <div class="about-col-2">
                 <h1 class="heading-1">Hi , my name is Vijayalaxmi</h1>
-                <h2 class="heading-3">she/her</h2>
-                <p class="about-me-text">
+                <h2 class="heading-2">she/her</h2>
+                <p class="p-text">
                   I am currently pursuing my masters in computer science at
                   Portland state university. Regarding my work experience, I
                   worked 6+ years as a Software quality assurance engineer. I
                   worked mainly for two major clients Southwest airlines and
                 </p>
-                <a href="" download class="btn btn-primary">Resume</a>
+                <a href="#get-in-touch" class="btn btn-primary">get in touch</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Resume section starts from here--->
-      <!--section id="resume"-->
+      <!--Resume starts from here--->
       <div id="resume-info">
         <div class="container">
           <div class="row-2">
@@ -99,15 +109,21 @@
           </div>
         </div>
       </div>
-      <!--/section-->
-      <!--Project section starts from here--->
-      <!--section id="project" class="background-color-2"-->
+
+      <!--Project  starts from here--->
       <div id="project-info">
         <div class="container-resume">
           <div class="row-3">
             <div class="project-col-1">
               <h1 class="heading-1">Project-1</h1>
               <h2 class="heading-2">AI 2048</h2>
+              <div class="github-icon">
+                <a
+                  href="https://github.com/PVijayalaxmi/AI_2048"
+                  aria-label="GitHub link to AI 2048"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <p class="p-text">
                 2048 is a puzzle game developed by Gabriele Cirulli , the game
                 itself is simple. You are given a 4×4 board, where each tile
@@ -122,6 +138,13 @@
             <div class="project-col-2">
               <h1 class="heading-1">Project-2</h1>
               <h2 class="heading-2">Amusement Park</h2>
+              <div class="github-icon">
+                <a
+                  href="https://github.com/PVijayalaxmi/AI_2048"
+                  aria-label="GitHub link to Park"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <p class="p-text">
                 By applying the concepts of Computer Graphics such as Texture
                 mapping walls,roadways,trees,plane,recreational table ,ticket
@@ -135,6 +158,13 @@
             <div class="project-col-3">
               <h1 class="heading-1">Project-3</h1>
               <h2 class="heading-2">Amusement Park</h2>
+              <div class="github-icon">
+                <a
+                  href="https://github.com/PVijayalaxmi/AI_2048"
+                  aria-label="GitHub link to Website"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <p class="p-text">
                 By applying the concepts of Computer Graphics such as Texture
                 mapping walls,roadways,trees,plane,recreational table ,ticket
@@ -148,24 +178,22 @@
           </div>
         </div>
       </div>
-      <!--/section-->
+
       <!--Contact information starts from here--->
       <section id="contact">
         <div id="contact-info">
           <div class="container">
             <div class="row-4">
               <div class="contact-col-1">
-                <form class="form">
-                  <h1 class="heading-1">Contact Me</h1>
-                  <!-- Add your code here -->
+                <form class="form" onsubmit="handleSubmit(); return false;">
                   <div class="form-element">
-                    <label class="label-text" for="username">Username :</label>
+                    <label class="label-text" for="username">Name :</label>
                     <input
                       class="input-element"
                       type="text"
                       name="name"
                       id="username"
-                      placeholder="Full Name"
+                      placeholder="Your Name"
                     />
                   </div>
                   <div class="form-element">
@@ -175,36 +203,56 @@
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Email Address"
+                      placeholder="you@hello.com "
                     />
                   </div>
                   <div class="form-element">
-                    <label class="label-text" for="Message">Message:</label>
-                    <input
-                      class="input-element"
-                      type="text"
-                      name="Message"
-                      id="Message"
-                      placeholder="Your Message"
-                    />
+                    <label class="label-text" for="message"
+                      >Your message:</label
+                    >
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      placeholder="Say hello! "
+                    ></textarea>
                   </div>
-                  <div class="form-element">
-                    <input
-                      class="btn btn-primary"
-                      type="submit"
-                      value="Submit"
-                    />
+                  <button class="btn btn-primary" type="submit" value="Submit">
+                    Submit
+                  </button>
+                  <div id="errorMessageContainer" class="message-container">
+                    <p class="error-message">
+                      Please enter all your information to submit
+                    </p>
+                  </div>
+                  <div id="successMessageContainer" class="message-container">
+                    <p class="success-message">Thank you!!!</p>
                   </div>
                 </form>
               </div>
-              <div class="contact-col-2">
+              <div id="get-in-touch" class="contact-col-2">
                 <h1 class="heading-1">Find me on</h1>
                 <p class="p-text">pujarvijayalaxmi@gmail.com</p>
                 <div class="media-icons">
-                  <a href=""><i class="fa-brands fa-facebook"></i></a>
-                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a
+                    href="https://www.facebook.com/vijayalaxmi.pujar/"
+                    aria-label="Visit my Facebook profile"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/vijayalaxmi-pujar-79700255/"
+                    aria-label="Visit my linkedin profile"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/vijayalaxmipujar"
+                    aria-label="Visit my instagram profile"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
                 </div>
+                <a href="" download class="btn btn-primary">Resume</a>
+                <a href="" download class="btn btn-primary">Lightmode</a>
               </div>
             </div>
           </div>
