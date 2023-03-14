@@ -24,6 +24,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: fixed;
 }
 
 .list {
@@ -93,7 +94,7 @@ section {
 .p-text {
   padding-top: 10px;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   text-align: left;
 }
@@ -279,7 +280,6 @@ nav .fa-solid {
   display: none;
 }
 @media (max-width: 780px) {
-  /* Update the styles for the About Me section */
   .heading-1 {
     font-size: 30px;
   }
