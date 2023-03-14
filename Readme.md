@@ -31,8 +31,11 @@ portfolio.js: Contains javascript file.
 style.css: Contains all the styling required for the website using flex and grid.
 
 Reference material for CSS grid and animations:
+
 https://www.youtube.com/watch?v=YszONjKpgg4&ab_channel=WebDevSimplified
+
 https://www.youtube.com/watch?v=9zBsdzdE4sM&ab_channel=WebDevSimplified
+
 https://www.youtube.com/watch?v=flItyHiDm7E&ab_channel=WebDevTutorials
 
 Site Deployment:

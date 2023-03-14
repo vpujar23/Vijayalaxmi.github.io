@@ -255,6 +255,11 @@ section {
 
 .btn.btn-primary {
   display: inline-block;
+  background: #262626;
+}
+
+.btn.btn-primary:hover {
+  display: inline-block;
   background: #ff004f;
 }
 
