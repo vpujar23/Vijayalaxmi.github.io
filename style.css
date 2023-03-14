@@ -14,7 +14,7 @@ body {
 
 .container {
   padding: 30px 11%;
-  padding-bottom: 80px 0;
+  /*--padding-bottom: 80px 0;--*/
   justify-content: center;
 }
 
@@ -46,8 +46,8 @@ body {
 
 /*-------------About me section starts from here----------*/
 section {
-  padding-top: 100px 15%;
-  padding-bottom: 80px 0;
+  /*--padding-top: 100px 15%;
+  padding-bottom: 80px 0;--*/
   margin: 0;
   color: #ababab;
 }
@@ -73,27 +73,27 @@ section {
 
 .heading-1 {
   font-size: 40px;
-  font: weight 500px;
+  font-weight: 600;
   color: #fff;
 }
 
 .heading-2 {
   padding-top: 5px;
   font-size: 30px;
-  font-weight: medium;
+  font-weight: 400;
   color: #fff;
 }
 
 .heading-3 {
   padding-top: 20px;
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #fff;
 }
 
 .p-text {
   padding-top: 10px;
-  font-weight: lighter;
+  font-weight: 200;
   font-size: 22px;
   color: #fff;
   text-align: left;
@@ -118,12 +118,14 @@ section {
   background: #262626;
   padding: 20px;
   font-size: 13px;
-  font-weight: light;
+  font-weight: 200;
+  transition: 0.2s;
 }
 .resume-col-1:hover,
 .resume-col-2:hover,
 .resume-col-3:hover {
   background: #ff004f;
+  transform: scale(1.1);
 }
 
 /*-------------Project section starts from here----------*/
@@ -144,13 +146,15 @@ section {
   background: #262626;
   padding: 20px;
   font-size: 13px;
-  font-weight: light;
+  font-weight: 200;
+  transition: 0.2s;
 }
 
 .project-col-1:hover,
 .project-col-2:hover,
 .project-col-3:hover {
   background: #ff004f;
+  transform: scale(1.1);
 }
 
 .gihub-icon {
