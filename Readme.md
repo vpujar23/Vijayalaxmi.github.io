@@ -22,6 +22,7 @@ Run index.html:
 Run the index.html file in a web browser or using VSC.
 
 Code Structure
+
 index.html :Contains HTML elements linked to CSS and javascript files.
 
 portfolio.js: Contains javascript file.

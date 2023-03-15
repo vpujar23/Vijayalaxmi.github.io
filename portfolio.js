@@ -1,3 +1,4 @@
+//Form submission
 let form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 
@@ -23,9 +24,10 @@ function handleSubmit(event) {
   }
 }
 
-var menu = document.getElementById('menu');
-var openBtn = document.querySelector('.fa-bars');
-var closeBtn = document.querySelector('.fa-xmark');
+//Hamburger vertical menu
+let menu = document.getElementById('menu');
+let openBtn = document.querySelector('.fa-bars');
+let closeBtn = document.querySelector('.fa-xmark');
 
 function openmenu() {
   menu.style.left = '0';

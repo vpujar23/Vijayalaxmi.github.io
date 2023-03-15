@@ -14,7 +14,6 @@ body {
 
 .container {
   padding: 30px 11%;
-  /*--padding-bottom: 80px 0;--*/
   justify-content: center;
 }
 
@@ -24,7 +23,6 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: fixed;
 }
 
 .list {
@@ -36,7 +34,8 @@ body {
 .items {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .items:hover {
@@ -46,16 +45,15 @@ body {
 
 /*-------------About me section starts from here----------*/
 section {
-  /*--padding-top: 100px 15%;
-  padding-bottom: 80px 0;--*/
   margin: 0;
   color: #ababab;
 }
 .row-1 {
-  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 30px;
+  padding-top: 50px;
 }
 
 .about-col-1 {
@@ -97,19 +95,18 @@ section {
   font-size: 22px;
   color: #fff;
   text-align: left;
+  letter-spacing: 1px;
 }
 
 /*-------------Resume section starts from here----------*/
-
-#resume-info {
-  padding: 30px 0;
-}
 
 .row-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
   grid-gap: 40px;
   margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 1%;
 }
 
 .resume-col-1,
@@ -130,15 +127,13 @@ section {
 
 /*-------------Project section starts from here----------*/
 
-#project-info {
-  padding: 30px 0;
-}
-
 .row-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
   grid-gap: 40px;
   margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 1%;
 }
 .project-col-1,
 .project-col-2,
@@ -157,7 +152,7 @@ section {
   transform: scale(1.1);
 }
 
-.gihub-icon {
+.github-icon {
   margin-right: 40px;
 }
 
@@ -177,10 +172,12 @@ section {
 /*-------------Contact section starts from here----------*/
 
 .row-4 {
-  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 13%;
 }
 
 .contact-col-1 {
@@ -284,7 +281,30 @@ form.btn-primary {
   font-weight: bold;
 }
 
-/* Media Queries for  Screens */
+/*-------------Footer starts from here----------*/
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ababab;
+}
+
+.footer-left {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.footer-right {
+  text-align: right;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/*------- Media Queries for  Screens-------------- */
 nav .fa-solid {
   display: none;
 }
@@ -300,24 +320,19 @@ nav .fa-solid {
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
-  }
-  .about-col-1 {
-    margin-bottom: 30px;
-  }
-
-  .about-col-2 {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .contact-col-1,
   .contact-col-2 {
     flex-basis: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .resume-col-1,
   .resume-col-2 {
     flex-basis: 100%;
+    margin-bottom: 20px;
   }
 
   nav .fa-solid {
@@ -345,5 +360,29 @@ nav .fa-solid {
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+
+  footer {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #ababab;
+  }
+
+  .footer-left {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .footer-right {
+    text-align: right;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 5px;
   }
 }
