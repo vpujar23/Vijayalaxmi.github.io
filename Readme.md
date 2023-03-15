@@ -22,8 +22,6 @@ Run index.html:
 Run the index.html file in a web browser or using VSC.
 
 Code Structure
-images :folder has images used in the project.
-
 index.html :Contains HTML elements linked to CSS and javascript files.
 
 portfolio.js: Contains javascript file.
@@ -38,4 +36,10 @@ https://www.youtube.com/watch?v=9zBsdzdE4sM&ab_channel=WebDevSimplified
 
 https://www.youtube.com/watch?v=flItyHiDm7E&ab_channel=WebDevTutorials
 
+https://www.w3schools.com/html/html_responsive.asp
+
+https://www.w3schools.com/howto/howto_css_vertical_menu.asp
+
 Site Deployment:
+
+https://vpujar23.github.io/Webdev-Project/
