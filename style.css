@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', 'san-serif';
+  font-family: 'san-serif';
   box-sizing: border-box;
 }
 html {
@@ -205,6 +205,7 @@ section {
 .media-icons :hover {
   color: #ff004f;
 }
+
 .about-col-1 .label-text {
   margin-top: 30px;
 }
