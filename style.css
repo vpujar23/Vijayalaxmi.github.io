@@ -4,12 +4,20 @@
   font-family: 'san-serif';
   box-sizing: border-box;
 }
+:root {
+  --black: #080808;
+  --white: #fff;
+  --lightgray: #ababab;
+  --darkgray: #262626;
+  --red: #ff004f;
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  background: #080808;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
 }
 
 .container {
@@ -32,7 +40,7 @@ body {
 }
 
 .items {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
@@ -40,13 +48,13 @@ body {
 
 .items:hover {
   width: 100%;
-  color: #ff004f;
+  color: var(--red);
 }
 
 /*-------------About me section starts from here----------*/
 section {
   margin: 0;
-  color: #ababab;
+  color: var(--lightgray);
 }
 .row-1 {
   display: flex;
@@ -72,28 +80,28 @@ section {
 .heading-1 {
   font-size: 40px;
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
 }
 
 .heading-2 {
   padding-top: 5px;
   font-size: 30px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 
 .heading-3 {
   padding-top: 20px;
   font-size: 25px;
   font-weight: 300;
-  color: #fff;
+  color: var(--white);
 }
 
 .p-text {
   padding-top: 10px;
   font-weight: 200;
   font-size: 22px;
-  color: #fff;
+  color: var(--white);
   text-align: left;
   letter-spacing: 1px;
 }
@@ -112,7 +120,7 @@ section {
 .resume-col-1,
 .resume-col-2,
 .resume-col-3 {
-  background: #262626;
+  background: var(--darkgray);
   padding: 20px;
   font-size: 13px;
   font-weight: 200;
@@ -121,7 +129,7 @@ section {
 .resume-col-1:hover,
 .resume-col-2:hover,
 .resume-col-3:hover {
-  background: #ff004f;
+  background: var(--red);
   transform: scale(1.1);
 }
 
@@ -138,7 +146,7 @@ section {
 .project-col-1,
 .project-col-2,
 .project-col-3 {
-  background: #262626;
+  background: var(--darkgray);
   padding: 20px;
   font-size: 13px;
   font-weight: 200;
@@ -148,7 +156,7 @@ section {
 .project-col-1:hover,
 .project-col-2:hover,
 .project-col-3:hover {
-  background: #ff004f;
+  background: var(--red);
   transform: scale(1.1);
 }
 
@@ -160,13 +168,13 @@ section {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #ababab;
+  color: var(--lightgray);
   display: inline-block;
 }
 
 .github-icon :hover {
   width: 100%;
-  color: #262626;
+  color: var(--darkgray);
 }
 
 /*-------------Contact section starts from here----------*/
@@ -198,12 +206,12 @@ section {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #ababab;
+  color: var(--lightgray);
   display: inline-block;
 }
 
 .media-icons :hover {
-  color: #ff004f;
+  color: var(--red);
 }
 
 .about-col-1 .label-text {
@@ -213,29 +221,29 @@ section {
   margin: 15px 0;
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: var(--white);
 }
 
 .input-element {
   margin: 15px 0;
   width: 100%;
   padding: 15px;
-  background-color: #262626;
+  background-color: var(--darkgray);
   border: none;
   font-size: 20px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
 }
 
 #message {
   margin: 15px 0;
   width: 100%;
   padding: 15px;
-  background-color: #262626;
+  background-color: var(--darkgray);
   border: none;
   font-size: 20px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
 }
 
 .btn {
@@ -244,21 +252,21 @@ section {
   width: fit-content;
   padding: 14px 50px;
   border-radius: 6px;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
-  background-color: #262626;
+  background-color: var(--darkgray);
   font-size: 20px;
   font-weight: bold;
 }
 
 .btn.btn-primary {
   display: inline-block;
-  background: #262626;
+  background: var(--darkgray);
 }
 
 .btn.btn-primary:hover {
   display: inline-block;
-  background: #ff004f;
+  background: var(--red);
 }
 
 form.btn-primary {
@@ -294,14 +302,14 @@ footer {
   text-align: left;
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: var(--white);
   letter-spacing: 1px;
 }
 
 .footer-right {
   text-align: right;
   font-size: 18px;
-  color: #fff;
+  color: var(--white);
   letter-spacing: 1px;
 }
 
@@ -340,7 +348,7 @@ nav .fa-solid {
   }
 
   nav ul {
-    background: #262626;
+    background: var(--darkgray);
     position: fixed;
     top: 0;
     left: -220px;
@@ -373,14 +381,14 @@ nav .fa-solid {
     text-align: left;
     font-size: 18px;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
     letter-spacing: 1px;
   }
 
   .footer-right {
     text-align: right;
     font-size: 14px;
-    color: #fff;
+    color: var(--white);
     letter-spacing: 1px;
     padding-top: 5px;
   }
