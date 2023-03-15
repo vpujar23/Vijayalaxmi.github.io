@@ -309,7 +309,7 @@ footer {
 nav .fa-solid {
   display: none;
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .heading-1 {
     font-size: 30px;
   }
@@ -327,13 +327,11 @@ nav .fa-solid {
   .contact-col-1,
   .contact-col-2 {
     flex-basis: 100%;
-    margin-bottom: 20px;
   }
 
   .resume-col-1,
   .resume-col-2 {
     flex-basis: 100%;
-    margin-bottom: 20px;
   }
 
   nav .fa-solid {
@@ -385,5 +383,33 @@ nav .fa-solid {
     color: #fff;
     letter-spacing: 1px;
     padding-top: 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1048px) {
+  .heading-1 {
+    font-size: 45px;
+  }
+  .heading-2 {
+    padding-top: 5px;
+    font-size: 35px;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    font-size: 25px;
+  }
+
+  .contact-col-1,
+  .contact-col-2 {
+    flex-basis: 100%;
+    font-size: 25px;
+  }
+
+  .resume-col-1,
+  .resume-col-2 {
+    flex-basis: 100%;
+    font-size: 25px;
   }
 }
