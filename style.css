@@ -318,6 +318,10 @@ nav .fa-solid {
   display: none;
 }
 @media (max-width: 768px) {
+  .container {
+    padding: 22px;
+    justify-content: center;
+  }
   .heading-1 {
     font-size: 30px;
   }
@@ -395,6 +399,10 @@ nav .fa-solid {
 }
 
 @media (min-width: 769px) and (max-width: 1048px) {
+  .container {
+    padding: 22px;
+    justify-content: center;
+  }
   .heading-1 {
     font-size: 45px;
   }
