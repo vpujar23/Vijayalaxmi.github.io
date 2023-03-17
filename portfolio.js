@@ -11,7 +11,7 @@ function handleSubmit(event) {
   let error = document.querySelector('#errorMessageContainer');
   let success = document.querySelector('#successMessageContainer');
 
-  if (name == '' || email == '' || message == '') {
+  if (name === '' || email === '' || message === '') {
     error.style = 'display:block';
     success.style = 'display:none';
   } else {
